@@ -44,6 +44,14 @@ const useCounter = defineStore("counter", {
         }
       }
     }
+  },
+  actions: {
+    increment() {
+      this.counter++
+    },
+    incrementNum(num) {
+      this.counter += num
+    }
   }
 })
 
