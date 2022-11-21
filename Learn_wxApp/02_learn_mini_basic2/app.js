@@ -28,7 +28,7 @@ App({
   onShow(options) {
     // 小程序启动，或从后台进入前台显示时触发
     // 作用一： options.scene：判断以什么方式场景进入小程序
-    console.log("onShow", options);
+    // console.log("onShow", options);
   },
   onHide() {
     // 小程序从前台进入后台时触发

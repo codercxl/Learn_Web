@@ -1,0 +1,27 @@
+<!--pages/07_learn_cpns/index.wxml-->
+<!-- 1.内置组件 -->
+<text>pages/07_learn_cpns/index.wxml</text>
+
+<!-- 2.自定义组件 -->
+<!-- 向组件传递数据 -->
+<section-info 
+  info="abc" 
+  title="Uzi" 
+  content="永远滴神"
+  bind:titleClick="onSectionClick"
+/>
+<section-info info="cba" title="Cxl" content="相信Uzi" />
+
+<!-- 3.样式细节 -->
+<test-style />
+<view class="title">我是页面的title</view>
+
+<!-- 4.tab-control组件 -->
+<tab-control
+  class="tab"
+  titles="{{digitalTitle}}"
+  bind:itemTap="onItemClick" 
+/>
+<button bindtap="onTabTap">调用组件方法</button>
+
+<tab-control titles="{{['热门', '流行', '新款']}}" />

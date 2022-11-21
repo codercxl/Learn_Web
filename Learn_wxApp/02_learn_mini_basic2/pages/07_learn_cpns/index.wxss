@@ -1,0 +1,19 @@
+/* pages/07_learn_cpns/index.wxss */
+/* 结论一：外部使用class的样式，只对外部wxml的class生效，对组件内是不生效的
+ 结论二：外部使用了id选择器、属性选择器不会对组件内产生影响
+ 结论三：外部使用了标签选择器，会对组件内产生影响 */
+.title {
+  background-color: palegreen;
+}
+
+/* view {
+  font-weight: 700;
+} */
+
+.abc {
+  background-color: peru;
+}
+
+.cba {
+  background-color: sandybrown;
+}

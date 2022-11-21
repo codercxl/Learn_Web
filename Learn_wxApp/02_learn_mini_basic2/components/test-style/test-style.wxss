@@ -1,0 +1,11 @@
+/* components/test-style/test-style.wxss */
+.title {
+  font-size: 40rpx;
+  color: red
+}
+/* 组件内的class样式，只对组件wxml内的节点生效, 对于引用组件的Page页面不生效。
+   组件内不能使用id选择器、属性选择器、标签选择器 */
+
+/* view {
+  background-color: orange;
+} */
