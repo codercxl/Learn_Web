@@ -1,0 +1,6 @@
+<!--pages/11_learn_nav/index.wxml-->
+<button bindtap="onNavTap">页面跳转</button>
+
+<view>{{message}}</view>
+
+<navigator url="/page2/detail/detail?name=cxl&age=18">组件跳转</navigator>

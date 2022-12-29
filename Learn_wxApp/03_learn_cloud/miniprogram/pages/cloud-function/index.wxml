@@ -1,0 +1,14 @@
+<!--pages/cloud-function/index.wxml-->
+<button type="primary" bindtap="onTestTap">测试云函数</button>
+
+<button type="primary" bindtap="onSumTap">计算数字和</button>
+
+<button type="primary" bindtap="onGetOpenidTap">获取openid</button>
+
+<button type="primary" bindtap="onDBTap">操作数据库</button>
+
+<button type="primary" bindtap="onRequireTap">发送网络请求</button>
+
+<button type="primary" bindtap="onQRCodeTap">获取小程序码</button>
+
+<image src="{{qrCodeFileID}}" mode="widthFix"/>

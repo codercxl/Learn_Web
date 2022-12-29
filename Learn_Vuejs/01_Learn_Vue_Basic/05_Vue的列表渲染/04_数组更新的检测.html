@@ -24,6 +24,7 @@
           names: ["abc", "cba", "nba", "aaa", "ccc"]
         }
       },
+      
       methods: {
         changeArray() {
           // 1.直接将数组修改为一个新的数组
@@ -38,7 +39,6 @@
 
           // 3.不修改原数组的方法是不能侦听(watch)
           const newNames = this.names.map(item => item + "why")
-          this.names = newNames
         }
       }
     })

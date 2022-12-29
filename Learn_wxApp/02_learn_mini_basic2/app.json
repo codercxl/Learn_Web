@@ -12,8 +12,18 @@
     "pages/05_learn_wxs/index",
     "pages/06_learn_event/index",
     "pages/07_learn_cpns/index",
-    "pages/08_learn_slot/index"
+    "pages/08_learn_slot/index",
+    "pages/09_learn_network/index",
+    "pages/10_learn_api/index",
+    "pages/11_learn_nav/index",
+    "pages/12_learn_login/index",
+    "page2/detail/detail"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取你的位置信息"
+    }
+  },
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ff0043",

@@ -37,11 +37,11 @@
         },
         info(newValue, oldValue) {
           // 2.如果是对象类型, 那么拿到的是代理对象
-          // console.log("info数据发生了变化:", newValue, oldValue)
-          // console.log(newValue.name, oldValue.name)
+          console.log("info数据发生了变化:", newValue, oldValue)
+          console.log(newValue.name, oldValue.name)
 
           // 3.获取原生对象
-          // console.log({ ...newValue })
+          console.log({ ...newValue })
           console.log(Vue.toRaw(newValue))
         }
       }

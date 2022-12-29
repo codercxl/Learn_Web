@@ -1,0 +1,10 @@
+<!--pages/10_learn_api/index.wxml-->
+<view>
+  <button size="mini" bindtap="onShowToast">showToast</button>
+  <button size="mini" bindtap="onShowModal">showModal</button>
+  <button size="mini" bindtap="onShowActiveSheet">showActive</button>
+</view>
+
+<button bindtap="onGetSysInfo">设备信息</button>
+
+<button bindtap="onStorage">本地存储</button>

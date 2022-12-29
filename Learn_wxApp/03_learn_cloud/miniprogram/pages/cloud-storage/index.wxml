@@ -1,0 +1,12 @@
+<!--pages/cloud-storage/index.wxml-->
+<!-- <image src="cloud://cloud1-0gxh9apkb864c60c.636c-cloud1-0gxh9apkb864c60c-1315723394/music_active.png" mode="widthFix"/>
+
+<image src="cloud://cloud1-0gxh9apkb864c60c.636c-cloud1-0gxh9apkb864c60c-1315723394/icon/video_active.png" mode="widthFix"/> -->
+<button type="primary" bindtap="onUploadTap">上传文件</button>
+<button type="primary" bindtap="onDownTap">下载文件</button>
+<button type="primary" bindtap="onDeleteTap">删除文件</button>
+<button type="primary" bindtap="onTempTap">临时文件</button>
+
+<!-- <image src="cloud://cloud1-0gxh9apkb864c60c.636c-cloud1-0gxh9apkb864c60c-1315723394/aaa.jpg" mode="widthFix"/> -->
+
+<image src="{{tempFiles}}" mode=""/>

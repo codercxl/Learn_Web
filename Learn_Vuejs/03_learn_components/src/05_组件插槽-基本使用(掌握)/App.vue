@@ -16,6 +16,7 @@
   </show-message>
 
   <show-message></show-message>
+  
 </template>
 
 <script>
