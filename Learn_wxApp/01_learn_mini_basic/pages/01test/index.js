@@ -1,4 +1,4 @@
-// pages/01test/index.js
+// pages/01_初体验/index.js
 Page({
 
   /**
