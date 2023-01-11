@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .item {
+      background-color: rgba(255, 0, 0, .1);
+    }
+  </style>
+</head>
+<body>
+  <!-- 默认宽高300*150 默认单位 px -->
+  <!-- <canvas class="item"></canvas> -->
+  <canvas class="item" width="200" height="100">
+    你的浏览器不支持canvas，请升级浏览器
+  </canvas>
+
+  <script>
+    window.onload = function() {
+      // 1.拿到 Canvas 元素对象
+      const canvasEl = document.querySelector('.item')
+
+      // 检查浏览器是否支持canvas
+      if (!canvasEl.getContext) return
+      
+      // 2.获取 canvas 渲染的上下文
+      // cvsCtx是一个绘图的上下文：提供了绘图的指令，可绘制各种图形(圆形 直线 椭圆...)
+      const cvsCtx = canvasEl.getContext('2d') // 2d\webgl
+      console.log(cvsCtx);
+    }
+  </script>
+</body>
+</html>

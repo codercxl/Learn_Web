@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(../images/grid.png);
+    }
+    .item {
+      background-color: rgba(255, 0, 0, .1);
+    }
+  </style>
+</head>
+<body>
+  <!-- 默认宽高300*150 默认单位 px -->
+  <!-- <canvas class="item"></canvas> -->
+  <canvas class="item" width="300" height="300">
+    你的浏览器不支持canvas，请升级浏览器
+  </canvas>
+
+  <script>
+    window.onload = function() {
+      const canvasEl = document.querySelector('.item')
+      if (!canvasEl.getContext) return
+      const cvsCtx = canvasEl.getContext('2d') // 2d\webgl
+      
+      // 1.不同路径画不同图形
+      // cvsCtx.beginPath();
+      // // x,y:圆心位置 R:半径 开始弧度 结束弧度 false:顺时针
+      // cvsCtx.arc(50, 50, 50, 0, Math.PI * 2, false);
+      // // cvsCtx.closePath();
+      // cvsCtx.stroke();
+
+      // cvsCtx.beginPath();
+      // cvsCtx.arc(150, 150, 50, 0, Math.PI, false);
+      // cvsCtx.stroke();
+
+      // 2.同一个路径画不同图
+      cvsCtx.beginPath();
+      cvsCtx.arc(50, 50, 50, 0, Math.PI * 2, false);
+      cvsCtx.moveTo(200, 150);
+      cvsCtx.arc(150, 150, 50, 0, Math.PI, false);
+      cvsCtx.stroke();
+    }
+  </script>
+</body>
+</html>

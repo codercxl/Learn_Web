@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(../images/grid.png);
+    }
+    .item {
+      background-color: rgba(255, 0, 0, .1);
+    }
+  </style>
+</head>
+<body>
+  <!-- 默认宽高300*150 默认单位 px -->
+  <!-- <canvas class="item"></canvas> -->
+  <canvas class="item" width="300" height="300">
+    你的浏览器不支持canvas，请升级浏览器
+  </canvas>
+
+  <script>
+    window.onload = function() {
+      const canvasEl = document.querySelector('.item')
+      if (!canvasEl.getContext) return
+      const cvsCtx = canvasEl.getContext('2d') // 2d\webgl
+      let count = 0
+      
+      drow()
+      setInterval(() => {
+        drow()
+      }, 1000);
+
+      function drow() {
+        count++
+        if (count >= 60) {
+          count = 0
+        }
+        cvsCtx.clearRect(0, 0, 300, 300);
+        cvsCtx.save();
+
+        cvsCtx.translate(100, 100);
+        cvsCtx.rotate(count * Math.PI * 2 / 60);
+        cvsCtx.lineWidth = 6;
+        cvsCtx.lineCap = 'round';
+        cvsCtx.strokeStyle = "red";
+
+        cvsCtx.beginPath();
+        cvsCtx.moveTo(0, 0);
+        cvsCtx.lineTo(0, -80);
+        cvsCtx.stroke();
+
+        cvsCtx.restore();
+          
+      }
+    }
+  </script>
+</body>
+</html>
